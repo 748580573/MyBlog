@@ -2,6 +2,7 @@
 title: ftp服务器搭建
 date: 2018-06-12 09:51:30
 tags:
+categories: windows
 ---
 #  ftp服务器搭建
 #### (注)转自(https://www.cnblogs.com/popfisher/p/7992036.html)
