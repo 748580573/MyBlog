@@ -90,3 +90,43 @@ public class Myclass{
     
       }
 ````
+## 创建配置类
+
+创建JavaConfig类的关键在于为其添加@Configration注解，@Configration注解表明这个类是一个配置类，该类应该包含在Spring应用上下文中如何创建bean的细节
+
+````java
+@Configration
+public class  MyConfig(){
+    
+}
+````
+
+### 声明简单的bean
+要在JavaConfig中声明bean,我们需要编写一个方法，这个方法会创建所需类型的实例，然后给这个方法添加@Bean注解。
+
+````java
+@Bean
+public CompactDisc sgtPeppers(){
+    return new CompactDisc();
+}
+````
+
+在本例中，bean的名字将会是setPeppers。如果你想为其设置成一个不同的名字的话，那么可以重命名该方法，也可以通过name指定一个不同的名字：
+
+````java
+@Bean(name="anotherName")
+public CompactDisc sgtPeppers(){
+    return new CompactDisc();
+}
+````
+### 在JavaConfig中应用XML配置
+在典型的Spring应用中，我们可能会同时使用自动化和显示配置。可以通过@Import()注解引用另外一个配置类，@ImportResource()应用xml配置
+
+````java
+@Configration
+@Import(MyConfig.class)
+@Import("classpath:test-config.xml")
+public class SoundConfig(){
+    
+}
+````
