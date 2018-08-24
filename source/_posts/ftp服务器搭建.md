@@ -1,7 +1,7 @@
 ---
 title: ftp服务器搭建
 date: 2018-06-12 09:51:30
-tags:
+tags: 
 categories: windows
 ---
 #  ftp服务器搭建
