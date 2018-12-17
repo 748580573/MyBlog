@@ -17,6 +17,8 @@ tags:
      <li>radio 固定选项 以name属性分组</li>
      <li>select 复选框，在form标签内,用户只能选区固定的选项</li>
      <li>datalist ，在form标签内使用，搭配单行文本框，以id进行绑定，用户既能选区固定选项，又能自己输入自己想要的选项</li>
+     <li>placeholder,占位提示符</li>
+     <li>readonly，只读</li>
   </ol>
 </ol>
   
